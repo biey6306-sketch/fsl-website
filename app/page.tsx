@@ -1,10 +1,12 @@
 import Image from 'next/image'
+import { DiscordLogin } from '@/components/discord-login'
 import { GlowBackground } from '@/components/glow-background'
 import { UserSearch } from '@/components/user-search'
 
 export default function Page() {
   return (
     <main className="relative flex min-h-screen items-center justify-center overflow-hidden bg-background px-6">
+      <DiscordLogin />
       <GlowBackground />
 
       <section className="relative z-10 flex w-full max-w-4xl flex-col items-center gap-8 text-center">
